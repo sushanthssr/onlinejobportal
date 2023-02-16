@@ -1,0 +1,23 @@
+.card{
+   
+    border:none;
+    width:50vw;
+    padding:40px;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:wheat(205,46%,30%,1);
+    background:linear-gradient(90deg,rgb(236, 167, 7)0%, rgb(12, 224, 171)100%);
+}
+.card  h1,h6{
+    color:white;
+}
+label{
+    color:white;
+}
+.image{
+    height:50em; background-size:cover; width:auto;
+    background-image:url('/assets/images/3.jpg');
+    /*background-position:50% 50%;*/
+  }

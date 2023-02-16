@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <h1>Applied Jobs</h1><br>
+</div>
+
+<div class="container" *ngFor='let job of jobs'>
+  <div class="card mt-3">
+    <div class="card-header bg-secondary text-white" >
+      <h5>{{ job.name }}</h5>
+    </div>
+    <div class="card-body bg-secondary text-white">
+      <p>Role-{{ job.role}}</p>
+      <p>Location-{{job.location}}</p>
+      <p>Company Name-{{job.company}}</p>
+      <p>JobId-{{job.id}}</p>
+
+   
+  <div class="container d-flex flex-row justify-content-between ">
+    <button type="button" style="color: rgb(6, 121, 6);">Job Applied</button>
+    <button type="button" class="btn btn-primary"  (click)="removeFromWishlist(job)">Cancel Application</button>
+    
+  </div>
+</div>
+
